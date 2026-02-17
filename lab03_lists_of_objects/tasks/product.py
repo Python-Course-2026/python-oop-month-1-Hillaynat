@@ -5,4 +5,5 @@ class Product:
         self.price = price
 
     def get_total(self, qty: int) -> float:
-        pass
+        self.qty = qty
+        return self.price * qty

@@ -8,4 +8,6 @@ class Car:
 
     def brake(self, v: int):
         """Снижает скорость, но не ниже 0"""
-        pass
+        self.speed -= v
+        if self.speed < 0:
+            self.speed = 0
